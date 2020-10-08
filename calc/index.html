@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Recording</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <section class="calculator">
+      <form>
+        <input type="text" name="valuebar" id="value" class="screen" />
+      </form>
+      <div class="buttons">
+        <!-- yellow -->
+        <button
+          type="button"
+          class="btn btn-yellow"
+          data-num="*"
+          onclick="displayValue(this)"
+        >
+          *
+        </button>
+        <button
+          type="button"
+          class="btn btn-yellow"
+          data-num="/"
+          onclick="displayValue(this)"
+        >
+          /
+        </button>
+        <button
+          type="button"
+          class="btn btn-yellow"
+          data-num="-"
+          onclick="displayValue(this)"
+        >
+          -
+        </button>
+        <button
+          type="button"
+          class="btn btn-yellow"
+          data-num="+"
+          onclick="displayValue(this)"
+        >
+          +
+        </button>
+        <!-- grey buttons -->
+        <button
+          type="button"
+          class="btn btn-grey"
+          data-num="."
+          onclick="displayValue(this)"
+        >
+          .
+        </button>
+        <button
+          type="button"
+          class="btn btn-grey"
+          data-num="9"
+          onclick="displayValue(this)"
+        >
+          9
+        </button>
+        <button
+          type="button"
+          class="btn btn-grey"
+          data-num="8"
+          onclick="displayValue(this)"
+        >
+          8
+        </button>
+        <button
+          type="button"
+          class="btn btn-grey"
+          data-num="7"
+          onclick="displayValue(this)"
+        >
+          7
+        </button>
+        <button
+          type="button"
+          class="btn btn-grey"
+          data-num="6"
+          onclick="displayValue(this)"
+        >
+          6
+        </button>
+        <button
+          type="button"
+          class="btn btn-grey"
+          data-num="5"
+          onclick="displayValue(this)"
+        >
+          5
+        </button>
+        <button
+          type="button"
+          class="btn btn-grey"
+          data-num="4"
+          onclick="displayValue(this)"
+        >
+          4
+        </button>
+        <button
+          type="button"
+          class="btn btn-grey"
+          data-num="3"
+          onclick="displayValue(this)"
+        >
+          3
+        </button>
+        <button
+          type="button"
+          class="btn btn-grey"
+          data-num="2"
+          onclick="displayValue(this)"
+        >
+          2
+        </button>
+        <button
+          type="button"
+          class="btn btn-grey"
+          data-num="1"
+          onclick="displayValue(this)"
+        >
+          1
+        </button>
+        <button
+          type="button"
+          class="btn btn-grey"
+          data-num="0"
+          onclick="displayValue(this)"
+        >
+          0
+        </button>
+        <button type="button" class="btn-equal btn-grey" onclick="calc()">
+          =
+        </button>
+        <button
+          type="button"
+          class="btn-clear btn-grey"
+          onclick="clearScreen()"
+        >
+          C
+        </button>
+      </div>
+    </section>
+    <script src="./calc.js"></script>
+  </body>
+</html>
